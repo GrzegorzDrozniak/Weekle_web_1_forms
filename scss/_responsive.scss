@@ -1,0 +1,45 @@
+@media all and (max-width: 950px){
+		
+	.site_container {
+		width: 680px;
+		height: 300px;
+	}
+	
+	#left_column,
+	#right_column{
+		width: 320px;
+		display: inline-block;
+	}
+	
+	#right_column {
+		margin-left: 40px;
+	}
+	
+	.container .form-container {
+		width: 100%;
+	}
+
+}
+
+@media all and (max-width: 720px){
+	
+	.site_container {
+		width: 95%;
+	}
+	
+	#left_column,
+	#right_column {
+		width: 100%;
+	}
+	
+	#right_column {
+		margin_left: 0;
+	}
+	
+	#top_head {
+		.logo {
+			width: 90%;
+		}
+	}
+	
+}

@@ -1,0 +1,341 @@
+/* Global Styles */
+body {
+    background-image: url(../img/bg.png);
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: top center;
+    background-repeat: no-repeat;
+    font-family: 'Titillium Web', sans-serif;
+    height: 100%;
+}
+
+/* Header Styles */
+#top_head {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#top_head .logo {
+    opacity: 0.3;
+}
+
+/* Main Styles*/
+.site_container {
+    width: 920px;
+    margin: 0 auto;
+}
+
+#left_column {
+    width: 420px;
+    float: left;
+}
+
+#left_column .container:last-child {
+    padding-bottom: 50px;
+}
+
+#right_column {
+    width: 420px;
+    float: left;
+    margin-left: 80px;
+}
+
+#right_column .bottom_logo {
+    text-align: center;
+    opacity: 0.3;
+    padding-top: 50px;
+}
+
+#right_column .bottom_logo img {
+    width: 100%;
+}
+
+/* Light Gray*/
+.container .form-tittle {
+    font-size: 32px;
+    color: #fff;
+    text-shadow: 2px 2px #000;
+    font-weight: 400;
+    margin-bottom: 16px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.container .form-container {
+    box-sizing: border-box;
+    width: 420px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.container .form-container form {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.container .form-container form .input_box {
+    border-radius: 5px;
+    border: 1px solid #c6c6c6;
+    margin-bottom: 20px;
+    height: 40px;
+}
+
+.container .form-container form .input_box .input-icon {
+    display: flex;
+    width: 70px;
+    float: left;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .form-container form .input_box .input-icon::after {
+    content: '';
+    width: 1px;
+    height: 80%;
+    background-color: #e4e4e4;
+    position: relative;
+    left: 20px;
+}
+
+.container .form-container form .input_box .input_field {
+    width: calc(100% - 70px);
+    float: left;
+}
+
+.container .form-container form .input_box input {
+    width: 95%;
+    box-sizing: border-box;
+    border: none;
+    height: 40px;
+    border-radius: 0 5px 5px 0;
+    margin-left: 5%;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Titillium Web", sans-serif;
+}
+
+.container .form-container form .input_box input:focus {
+    outline: none;
+}
+
+.container .form-container form .input_box input::placeholder {
+    color: #c6c6c6;
+}
+
+.container .form-container form .input_box .location_list {
+    width: 95%;
+    box-sizing: border-box;
+    border: none;
+    height: 40px;
+    border-radius: 0 5px 5px 0;
+    margin-left: 5%;
+    font-size: 16px;
+    font-weight: 400;
+    color: #c6c6c6;
+    font-family: 'Titillium Web', sans-serif;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    background-image: url(../img/arrow.png);
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+
+.container .form-container form .input_box .location_list:focus {
+    outline: none;
+}
+
+.container .form-container form .input_box:focus-within {
+    border: 1px solid #9cd436;
+}
+
+.container .form-container form .textarea_container {
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #c6c6c6;
+    font-weight: 400;
+    height: 230px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.container .form-container form .text_box {
+    box-sizing: border-box;
+    width: 90%;
+    margin: 0 auto;
+    resize: none;
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    overflow: hidden;
+    font-size: 16px;
+    font-family: 'Titillium Web', sans-serif;
+    margin-top: 5px;
+}
+
+.container .form-container form .text_box::placeholder {
+    color: #c6c6c6;
+}
+
+.container .form-container form .text_box:focus {
+    outline: none;
+}
+
+.container .form-container form .btn {
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px #000;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 18px;
+}
+
+.container .form-container form .btn_font_large {
+    font-size: 24px;
+}
+
+.container .form-container form .btn_large {
+    width: 100%;
+    height: 48px;
+}
+
+.container .form-container form .btn_small {
+    width: 43%;
+    height: 40px;
+}
+
+.container .form-container form .green {
+    border: 1px solid #3b9a00;
+    background: linear-gradient(to bottom, #a3d840, #7ec31f);
+}
+
+.container .form-container form .red {
+    border: 1px solid #a72c36;
+    background: linear-gradient(to bottom, #f65e6f, #f03948);
+}
+
+.container .form-container form button:disabled {
+    background: linear-gradient(to bottom, rgba(163, 216, 64, 0.5), rgba(126, 195, 31, 0.5));
+    border: 1px solid rgba(59, 154, 0, 0.5);
+    cursor: not-allowed;
+}
+
+.container .form-container form button:focus {
+    outline: none;
+}
+
+.container .form-container form .btn:hover:enabled {
+    background: linear-gradient(to bottom, #7ec31f, #a3d840);
+}
+
+.container .form-container form .red:hover:enabled {
+    background: linear-gradient(to bottom, #f03948, #f65e6f);
+}
+
+.container .form-container form .buttons_container {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.checkbox_container {
+    display: inline-block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 17.34px;
+    user-select: none;
+    color: #c6c6c6;
+    text-align: left;
+}
+
+.checkbox_container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    height: 15px;
+    width: 15px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.checkbox_border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border: 1px solid #c6c6c6;
+    border-radius: 5px;
+}
+
+.checkbox_container input:checked ~ .checkbox_border .checkmark {
+    background: linear-gradient(to bottom, #a3d840, #7ec31f);
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox_container input:checked ~ .checkbox_border .checkmark:after {
+    display: block;
+}
+
+.margin_reset {
+    margin-bottom: 0;
+}
+
+@media all and (max-width: 950px) {
+    .site_container {
+        width: 680px;
+        height: 300px;
+    }
+
+    #left_column,
+  #right_column {
+        width: 320px;
+        display: inline-block;
+    }
+
+    #right_column {
+        margin-left: 40px;
+    }
+
+    .container .form-container {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 720px) {
+    .site_container {
+        width: 95%;
+    }
+
+    #left_column,
+  #right_column {
+        width: 100%;
+    }
+
+    #right_column {
+        margin_left: 0;
+    }
+
+    #top_head .logo {
+        width: 90%;
+    }
+}

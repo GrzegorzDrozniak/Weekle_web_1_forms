@@ -1,0 +1,33 @@
+@import 'mixins';
+
+/* Main Styles*/
+
+.site_container {
+	width: 920px;
+	margin: 0 auto;
+}
+
+
+#left_column {
+	@include column-settings;
+	
+	.container:last-child {
+		padding-bottom: 50px;
+	}
+}
+
+#right_column {
+	@include column-settings;
+	margin-left: 80px;
+	
+	.bottom_logo{
+		text-align: center;
+		opacity: 0.3;
+		padding-top: 50px;
+		
+		img {
+			width:100%;
+		}
+	}
+
+}
