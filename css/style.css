@@ -322,6 +322,10 @@ body {
 }
 
 @media all and (max-width: 720px) {
+    #top_head .logo {
+        width: 90%;
+    }
+
     .site_container {
         width: 95%;
     }
@@ -332,10 +336,26 @@ body {
     }
 
     #right_column {
-        margin_left: 0;
+        margin-left: 0;
     }
 
-    #top_head .logo {
-        width: 90%;
+    #left_column .container:last-child {
+        padding-bottom: 0px;
+    }
+}
+
+@media all and (max-width: 350px) {
+    .container .form-container form .buttons_container {
+        height: 100px;
+        display: block;
+    }
+
+    .container .form-container form .btn_small {
+        width: 100%;
+        font-size: 24px;
+    }
+
+    .container .form-container form .btn_small:last-child {
+        margin-top: 20px;
     }
 }
