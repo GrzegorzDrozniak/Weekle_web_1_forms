@@ -1,0 +1,203 @@
+@import 'variables';
+@import 'mixins';
+
+.container {
+
+	.form-tittle {
+		font-size: 32px;
+		color: #fff;
+		text-shadow: 2px 2px #000;
+		font-weight: 400;
+		margin-bottom: 16px;
+		margin-top: 30px;
+		text-align: center;
+	}
+
+
+	.form-container {
+		box-sizing: border-box;
+		width: 420px;
+		background-color: rgba(0, 0, 0, 0.3);
+		@include borderRadius;
+		padding: 20px;
+		margin: 0 auto;
+
+		form {
+			background-color: #fff;
+			@include borderRadius;
+			padding: 20px;
+
+			.input_box {
+
+				@include borderRadius;
+				border: 1px solid $mainColor;
+				margin-bottom: 20px;
+				height: 40px;
+
+				.input-icon {
+					display: flex;
+					width: 70px;
+					float: left;
+					height: 40px;
+					align-items: center;
+					justify-content: center;
+				}
+
+				.input-icon::after {
+					content: '';
+					width: 1px;
+					height: 80%;
+					background-color: #e4e4e4;
+					position: relative;
+					left: 20px;
+				}
+
+				.input_field {
+					width: calc(100% - 70px);
+					float: left;
+				}
+
+				input {
+					width: 95%;
+					box-sizing: border-box;
+					border: none;
+					height: 40px;
+					border-radius: 0 5px 5px 0;
+					margin-left: 5%;
+					font-size: 16px;
+					font-weight: 400;
+					font-family: $fontFamily;
+				}
+
+				input:focus {
+					outline: none;
+				}
+
+				input::placeholder {
+					color: $mainColor;
+				}
+
+				.location_list {
+					width: 95%;
+					box-sizing: border-box;
+					border: none;
+					height: 40px;
+					border-radius: 0 5px 5px 0;
+					margin-left: 5%;
+					font-size: 16px;
+					font-weight: 400;
+					color: $mainColor;
+					font-family: 'Titillium Web', sans-serif;
+					appearance: none;
+					-webkit-appearance: none;
+					-moz-appearance: none;
+					-ms-appearance: none;
+					background-image: url(../img/arrow.png);
+					background-repeat: no-repeat;
+					background-position: right 10px center;
+				}
+
+				.location_list:focus {
+					outline: none;
+				}
+
+			}
+
+			.input_box:focus-within {
+				border: 1px solid #9cd436;
+			}
+
+
+			.textarea_container {
+				box-sizing: border-box;
+				@include borderRadius;
+				border: 1px solid $mainColor;
+				font-weight: 400;
+				height: 230px;
+				margin-bottom: 20px;
+				text-align: center;
+			}
+
+			.text_box {
+				box-sizing: border-box;
+				width: 90%;
+				margin: 0 auto;
+				resize: none;
+				border: none;
+				border-radius: 5px 5px 5px 5px;
+				overflow: hidden;
+				font-size: 16px;
+				font-family: 'Titillium Web', sans-serif;
+				margin-top: 5px;
+			}
+
+			.text_box::placeholder {
+				color: $mainColor;
+			}
+
+			.text_box:focus {
+				outline: none;
+			}
+
+			.btn {
+				text-align: center;
+				color: #fff;
+				text-shadow: 1px 1px #000;
+				@include borderRadius;
+				cursor: pointer;
+				font-family: 'Titillium Web', sans-serif;
+				font-size: 18px;
+			}
+
+			.btn_font_large {
+				font-size: 24px;
+			}
+			.btn_large {
+				width: 100%;
+				height: 48px;
+			}
+
+			.btn_small {
+				width: 43%;
+				height: 40px;
+			}
+			.green {
+				border: 1px solid #3b9a00;
+				background: linear-gradient(to bottom, #a3d840, #7ec31f);
+			}
+
+			.red {
+				border: 1px solid #a72c36;
+				background: linear-gradient(to bottom, #f65e6f, #f03948);
+			}
+
+			button:disabled {
+				background: linear-gradient(to bottom, rgba(163, 216, 64, 0.5), rgba(126, 195, 31, 0.5));
+				border: 1px solid rgba(59, 154, 0, 0.5);
+				cursor: not-allowed;
+			}
+
+			button:focus {
+				outline: none;
+
+			}
+
+			.btn:hover:enabled {
+				background: linear-gradient(to bottom, #7ec31f, #a3d840);
+			}
+
+
+			.red:hover:enabled {
+				background: linear-gradient(to bottom, #f03948, #f65e6f);
+			}
+
+
+			.buttons_container {
+				height: 40px;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+			}
+		}
+	}
+}

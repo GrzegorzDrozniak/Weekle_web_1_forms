@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<!--Custom Font-->
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,700&amp;subset=latin-ext" rel="stylesheet">
+
+
+	<!--Normalize.css-->
+	<link rel="stylesheet" href="css/normalize.css">
+
+	<!--Custom Style-->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<header id="top_head">
+		<img class='logo' src="img/top_logo.png" alt="">
+	</header>
+
+	<div class="site_container">
+		<section id="left_column">
+
+			<!--Register Form-->
+
+			<div class="container">
+				<h2 class='form-tittle'>Register Form</h2>
+
+				<div class="form-container">
+					<form action="">
+
+						<div class="input_box">
+							<div class="input-icon">
+								<img class="form-icon" src="img/username.png" alt="">
+							</div>
+							<div class="input_field">
+								<input required placeholder="Username" type="text">
+							</div>
+
+						</div>
+
+						<div class="input_box">
+							<div class="input-icon">
+								<img class="form-icon" src="img/password.png" alt="">
+							</div>
+							<div class="input_field">
+								<input required placeholder="Password" type="password">
+							</div>
+
+						</div>
+
+						<div class="input_box">
+							<div class="input-icon">
+								<img class="form-icon" src="img/password.png" alt="">
+							</div>
+							<div class="input_field">
+								<input required placeholder="Confirm Password" type="password">
+							</div>
+
+						</div>
+
+						<div class="input_box">
+							<div class="input-icon">
+								<img class="form-icon" src="img/email.png" alt="">
+							</div>
+							<div class="input_field">
+								<input required placeholder="Email" type="email">
+							</div>
+
+						</div>
+
+						<div class="input_box">
+							<div class="input-icon">
+								<img class="form-icon" src="img/location.png" alt="">
+							</div>
+							<div class="input_field">
+								<select class='location_list' required="required">
+							  	
+							  	  <option disabled="" selected value="location">Your Location</option>
+								  <option 
+								  <option value="krakow">Kraków</option>
+								  <option value="warszawa">Warszawa</option>
+								  <option value="wroclaw">Wrocław</option>
+								  <option value="gdansk">Gdańsk</option>
+								</select>
+							</div>
+
+						</div>
+
+
+						<label class="checkbox_container">I have read and accept the terms of use
+ 								<input type="checkbox" checked="checked">
+ 							<span class="checkbox_border">
+								<span class="checkmark"></span>
+ 							</span>
+ 						</label>
+
+						<button class="btn btn_large green btn_font_large">Sign up</button>
+
+					</form>
+				</div>
+
+			</div>
+
+			<!--Send Email Form-->
+
+			<div class="container">
+				<h2 class='form-tittle'>Send Email</h2>
+
+				<div class="form-container">
+					<form action="">
+
+						<div class="input_box">
+							<div class="input-icon">
+								<img class="form-icon" src="img/username.png" alt="">
+							</div>
+							<div class="input_field">
+								<input required placeholder="Your Name" type="text">
+							</div>
+
+						</div>
+
+						<div class="input_box">
+							<div class="input-icon">
+								<img class="form-icon" src="img/email.png" alt="">
+							</div>
+							<div class="input_field">
+								<input required placeholder="Your Email" type="email">
+							</div>
+
+						</div>
+
+						<div class="textarea_container">
+							<textarea required placeholder="Type your message..." class='text_box' name="" id="" cols="30" rows="8"></textarea>
+						</div>
+
+
+						<label class="checkbox_container left_align">Send a copy to my Email
+ 								<input required type="checkbox" checked="checked">
+ 							<span class="checkbox_border">
+								<span class="checkmark"></span>
+ 							</span>
+ 						</label>
+
+						<button class="btn btn_large green btn_font_large">Send Email</button>
+
+					</form>
+				</div>
+
+			</div>
+
+		</section>
+
+		<!--Right Column-->
+
+		<section id="right_column">
+
+			<!--Sign In Form-->
+
+			<div class="container">
+				<h2 class='form-tittle'>Sign In Form</h2>
+				<div class="form-container">
+					<form action="">
+
+						<div class="input_box">
+							<div class="input-icon">
+								<img class="form-icon" src="img/username.png" alt="">
+							</div>
+							<div class="input_field">
+								<input required placeholder="Username" type="text">
+							</div>
+
+						</div>
+
+						<div class="input_box">
+							<div class="input-icon">
+								<img class="form-icon" src="img/password.png" alt="">
+							</div>
+							<div class="input_field">
+								<input required placeholder="Password" type="password">
+							</div>
+
+						</div>
+
+						<div class="buttons_container">
+							<label class="checkbox_container left_align margin_reset">Remember me
+ 								<input required type="checkbox" checked="checked">
+ 							<span class="checkbox_border">
+								<span class="checkmark"></span>
+ 							</span>
+ 						</label>
+
+
+							<button class="btn btn_small green btn_right btn_font_large">Sign in</button>
+						</div>
+
+					</form>
+				</div>
+			</div>
+
+			<!--Recover Form-->
+
+			<div class="container">
+				<h2 class='form-tittle'>Recover Form</h2>
+				<div class="form-container">
+					<form action="">
+
+						<div class="input_box">
+							<div class="input-icon">
+								<img class="form-icon" src="img/email.png" alt="">
+							</div>
+							<div class="input_field">
+								<input required placeholder="Enter your Email" type="email">
+							</div>
+
+						</div>
+
+						<div class="input_box">
+							<div class="input-icon">
+								<img class="form-icon" src="img/phone.png" alt="">
+							</div>
+							<div class="input_field">
+								<input required placeholder="Enter your Phone number" type="tel">
+							</div>
+
+						</div>
+
+						<div class="buttons_container">
+							<button class="btn btn_small green btn_right">Send</button>
+
+
+							<button type='button' class="btn btn_small green" disabled>Done</button>
+						</div>
+
+					</form>
+				</div>
+			</div>
+
+			<!--Subscribe Form-->
+
+			<div class="container">
+				<h2 class='form-tittle'>Subscribe Form</h2>
+				<div class="form-container">
+					<form action="">
+
+						<div class="input_box">
+							<div class="input-icon">
+								<img class="form-icon" src="img/email.png" alt="">
+							</div>
+							<div class="input_field">
+								<input required placeholder="Enter your Email" type="email">
+							</div>
+
+						</div>
+
+						<div class="buttons_container">
+							<button class="btn btn_small green btn_right small_font">Subscribe</button>
+
+
+							<button type='button' class="btn btn_small red btn_right small_font">No, Thanks</button>
+						</div>
+
+					</form>
+				</div>
+			</div>
+
+			<!--Bottom Logo-->
+
+			<div class="bottom_logo">
+				<img src="img/bottom_logo.png" alt="">
+			</div>
+		</section>
+
+	</div>
+
+
+
+	<!--jQuery-->
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<!--Custom Script-->
+	<script src="js/script.js"></script>
+</body>
+
+</html>

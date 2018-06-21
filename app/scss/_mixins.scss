@@ -1,0 +1,8 @@
+@mixin column-settings{
+	width: 420px;
+	float: left;
+}
+
+@mixin borderRadius {
+	border-radius: 5px;
+}
